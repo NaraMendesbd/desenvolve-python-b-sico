@@ -1,0 +1,14 @@
+﻿Solução Dissertativa
+
+
+1- Entrada - Ler e armazenar o número n que será multiplicado por 9;
+2 - Processamento - Subtrair n - 1 e armazenar como primeiro dígito  n1;
+3 - Processamento -  Subtrair 10 - n e armazenar como segundo dígito n2;
+4 - Processamento - Realize a expressão (n1 x 10) + n2 e armazene como resultado final r;
+5 - Saída - Apresente r (resultado final) e encerre o programa.
+
+
+
+
+9 x 3 = 3 - 1, 10 - 3;
+9 x 3 = 2 x 10 + 7
