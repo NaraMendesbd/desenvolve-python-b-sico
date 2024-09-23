@@ -6,15 +6,12 @@
 
 def soma_digitos(n):
     soma = 0
+    while n > 0:
+        digito = n % 10  # Último dígito do número
+        soma += digito  # Adiciona o dígito à soma
+        n = n // 10  # Remove o último dígito do número
+    return soma
 
-while (n > 0):
-
-    resto = n % 10
-    n = (n - resto)/10
-    soma = soma + resto
-
-
-print("A soma dos números é: ", n)
-
-
-
+n = int(input("Digite um número inteiro: "))
+resultado = soma_digitos(n)
+print(f"A soma dos dígitos de {n} é: {resultado}")
