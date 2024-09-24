@@ -14,58 +14,57 @@
 
 import math
 
-# Perímetro de um triângulo
+# Perímetro do triângulo
 def calcula_perimetro_triangulo(lado1, lado2, lado3):
     return lado1 + lado2 + lado3
 
-# Perímetro de um círculo
+# Perímetro do círculo
 def calcula_perimetro_circulo(raio):
     return 2 * math.pi * raio
 
-# Perímetro de um retângulo (ou quadrado se lado2 não for fornecido)
-def calcula_perimetro_retangulo(lado1, lado2=None):
-    if lado2 is None:  # Caso seja um quadrado
-        return 4 * lado1
-    else:  # Caso seja um retângulo
-        return 2 * lado1 + 2 * lado2
+# Perímetro do quadrado
+def calcula_perimetro_quadrado(lado1):
+       return 4 * lado1
+
+# Perímetro do retângulo 
+def calcula_perimetro_retangulo(lado1, lado2):
+    return 2 * lado1 + 2 * lado2
 
 # Exibir o menu e realizar o cálculo com base na escolha do usuário
 def exibir_menu():
     while True:
-        print("\nMenu de Cálculos de Perímetro:")
-        print("1. Calcular perímetro de um triângulo")
-        print("2. Calcular perímetro de um círculo")
-        print("3. Calcular perímetro de um retângulo ou quadrado")
-        print("4. Sair")
-        opcao = int(input("Escolha uma opção: "))
+        print("Menu de Cálculos de Perímetro:")
+        print("1. Calcular perímetro do triângulo")
+        print("2. Calcular perímetro do círculo")
+        print("3. Calcular perímetro do quadrado")
+        print("4. Calcular perímetro do retângulo")
+        print("5. Sair")
+        opção = int(input("Escolha uma opção: "))
 
-        if opcao == 1:
+        if opção == 1:
             lado1 = int(input("Informe o valor do lado 1 do triângulo: "))
             lado2 = int(input("Informe o valor do lado 2 do triângulo: "))
             lado3 = int(input("Informe o valor do lado 3 do triângulo: "))
             perimetro = calcula_perimetro_triangulo(lado1, lado2, lado3)
             print(f"O perímetro do triângulo é: {perimetro}")
 
-        elif opcao == 2:
+        elif opção == 2:
             raio = int(input("Informe o valor do raio do círculo: "))
             perimetro = calcula_perimetro_circulo(raio)
             print(f"O perímetro do círculo é: {perimetro:.2f}")
 
-        elif opcao == 3:
+        elif opção == 3:
             lado1 = int(input("Informe o valor do lado 1: "))
-            lado2 = input("Informe o valor do lado 2 (deixe vazio se for um quadrado): ")
-            if lado2:
-                perimetro = calcula_perimetro_retangulo(lado1, int(lado2))
-            else:
-                perimetro = calcula_perimetro_retangulo(lado1)
-            print(f"O perímetro é: {perimetro}")
-
-        elif opcao == 4:
-            print("Saindo...")
-            break
+            perimetro = calcula_perimetro_quadrado(lado1)
+            print(f"O perímetro do quadrado é: {perimetro}") 
+       
+        elif opção == 4:
+            lado1 = int(input("Informe o valor do lado 1: "))
+            lado2 = input("Informe o valor do lado 2: ")
+            perimetro = calcula_perimetro_retangulo(lado1, int(lado2))
+            print(f"O perímetro do quadrado é: {perimetro}")
 
         else:
-            print("Opção inválida. Tente novamente.")
-
-# Programa principal
+            break
+       
 exibir_menu()
