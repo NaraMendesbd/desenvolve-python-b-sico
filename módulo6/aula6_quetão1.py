@@ -3,8 +3,9 @@
 
 # Use a constante pi da biblioteca math
 # Arredonde o resultado para 2 casas decimais
+# raios = [1.5, 0.8, 2.3, 5.0]
 
 import math
-raios = [2, 3 ,4 ,5, 6]
+raios = [1.5, 0.8, 2.3, 5.0]
 áreas = list(map(lambda r: round(math.pi*(r**2), 2), raios))
 print(áreas)
