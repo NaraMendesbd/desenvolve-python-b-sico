@@ -1,0 +1,12 @@
+livros = [
+["O Senhor dos Anéis - O Retorno do Rei", "J.R.R. Tolkien", 2002, 441],
+["O Senhor dos Anéis - A Sociedade do Anel", "J.R.R. Tolkien", 2002, 441],  
+["O Senhor dos Anéis - As Duas Torres", "J.R.R. Tolkien", 2002, 473],  
+["A Bicicleta Azul - Volume 1", "Régine Deforges", 1985, 403],  
+["A Bicicleta Azul - Volume 2", "Régine Deforges", 1985, 291],  
+["A Bicicleta Azul - Volume 3", "Régine Deforges", 1985, 378],  
+["A Bicicleta Azul -Tango Negro", "Régine Deforges", 1995, 316],  
+["O Incêdio de Rróia", "Marion Zimmer Bradley", 1988, 545],  
+["Ivanhoé", "Walter Scott", 2003, 478], 
+["Os Três Mosqueteiros", "Alexandre Dumas", 1844, 688], 
+]

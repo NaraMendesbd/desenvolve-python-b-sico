@@ -17,9 +17,10 @@ arquivo_palavras = "palavras.txt"
 
 # Lê a frase do arquivo
 with open(arquivo_frase, 'r') as fp:
+    conteudo = fp.read()
 
 # Remover espaços em branco e caracteres não alfabéticos
-    palavras = re.findall(r'\b\w+\b', "Bom dia, meu nome é Davi.")
+    palavras = re.findall(r'\b\w+\b', conteudo)
 
 # Salvando em um novo arquivo
 with open(arquivo_palavras, 'w', encoding='utf-8') as arquivo:

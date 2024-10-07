@@ -14,16 +14,20 @@
 # Limite o número de tentativas para 6 (as partes do enforcado).
 
 
-with open("gabarito_forca.txt", "r") as fp:
-    for linha in fp:
-        arquivo.write(palavra + "\n")
-
 import random
+def imprime_enforcado(tentativas):
+    with open("gabarito_forca.txt", "r") as f:
+        enforcado = f.read().splitlines()
+
+    inicio = (6 - tentativas) * 7
+    for linha in enforcado[inicio:inicio + 7]:
+        print(linha)
+
 
 def jogo_da_forca():
     # Lendo palavras do arquivo
     with open("gabarito_forca.txt", "r") as fp:
-        palavras = arquivo.read().splitlines()
+        palavras = fp.read().splitlines()
     
     # Escolhendo uma palavra aleatória
     palavra = random.choice(palavras)

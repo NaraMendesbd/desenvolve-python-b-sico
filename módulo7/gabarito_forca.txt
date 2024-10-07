@@ -1,0 +1,10 @@
+﻿cidade
+estado
+casa 
+calor
+temperatura
+outubro
+cadeira
+mesa
+horário
+semana 
